@@ -2,6 +2,8 @@ import * as React from "react";
 import {Outlet, Route, Routes} from "react-router-dom";
 
 import Home from './componentPage/home'
+import Navbar from './component/navbar/navbar'
+import Footer from "./component/footer/footer";
 
 export default function App() {
     return (
@@ -22,7 +24,9 @@ function NotFound() {
 function Layout() {
     return (
         <div>
+            <Navbar />
             <Outlet/>
+            <Footer />
         </div>
     );
 }
