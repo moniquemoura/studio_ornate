@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './navbar.css'
 export default function Navbar(){
 return (
@@ -5,10 +6,16 @@ return (
        <nav>
           <a className="studionome">STUDIO ORNATE</a>
              <ul>
-                 <li><a href="">O Studio</a></li>
-                 <li><a href="">Artes</a></li>
-                 <li><a href="">Contatos</a></li>
-                 <li><a href="" className="btn">Agende Agora!</a></li>
+                 <li>
+                   <Link to="/agendamento">
+                    <a >O Studio</a>
+                    </Link>
+                    </li>
+                 <li><a >Artes</a></li>
+                 <li><a >Contatos</a></li>
+                 <li>
+                     <button className="btn">Agende Agora!</button>
+                 </li>
              </ul>
        </nav>
     </header>
