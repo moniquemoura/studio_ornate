@@ -1,4 +1,4 @@
-import { toBePartiallyChecked } from '@testing-library/jest-dom/dist/matchers'
+import 'bootstrap/dist/css/bootstrap.css'
 import Formulario from './formulario'
 export default function Agendamento() {
     return (
