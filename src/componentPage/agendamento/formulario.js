@@ -17,27 +17,29 @@ export default function Formulario() {
     if (enviado) {
         return <h3 >Nossa equipe entrará em contato confirmando!</h3>
     }
-    
+
     return (
         <form onSubmit={handleSubmit}>
             <div className='my-4'>
                 <label className="form-label " >Nome: </label>
-                <input className="form-control" type="text" id="nome" name="nome" onChange={valueInput} />
-            </div>
-
-            <div className='my-4'>
-                <label className="form-label" >Data de nascimento:</label>
-                <input className="form-control" type="date" id="data" name="data_nascimento" onChange={valueInput} />
-            </div>
-
-            <div className='my-4'>
-                <label className="form-label" >Telefone:</label>
-                <input className="form-control" type="text" id="telefone" name="telefone" onChange={valueInput} />
+                <input className="form-control" type="text" id="nome" name="nome" placeholder="Nome" onChange={valueInput} />
             </div>
 
             <div className='my-4'>
                 <label className="form-label" >E-mail:</label>
-                <input className="form-control" type="text" id="email" name="email" onChange={valueInput} />
+                <input className="form-control" type="text" id="email" name="email" placeholder="E-mail" onChange={valueInput} />
+            </div>
+
+            <div className='row'>
+                <div className='my-4 col'>
+                    <label className="form-label" >Data de nascimento:</label>
+                    <input className="form-control" type="date" id="data" name="data_nascimento" onChange={valueInput} />
+                </div>
+
+                <div className='my-4 col'>
+                    <label className="form-label" >Telefone:</label>
+                    <input className="form-control" type="text" id="telefone" name="telefone" placeholder="Telefone" onChange={valueInput} />
+                </div>
             </div>
 
             <div className='row'>
@@ -52,33 +54,32 @@ export default function Formulario() {
                         <option value="4">Emma Lee</option>
                         <option value="5">David Brown</option>
                     </select>
-
-
                 </div>
 
                 <div className='my-4 col'>
                     <label className="form-label" >Horário:</label>
-                    <div className="form-text mb-2">Escolha o melhor horário, para a sua primeira conversa com seu tatuador(a).</div>
+                    <div className="form-text mb-2">Escolha o melhor horário para você.</div>
                     <select className="form-select" aria-label="Disabled select example" name="horarios" onChange={valueInput}>
                         <option >selecione</option>
+                        <option value="08:00">08:00</option>
                         <option value="10:00">10:00</option>
                         <option value="14:00">14:00</option>
+                        <option value="16:00">16:00</option>
                         <option value="18:00">18:00</option>
                     </select>
                 </div>
 
             </div>
 
-
             <div className='my-4'>
                 <label className="form-label" >Informações adicionais:</label>
-                <input className='form-control' id="informacoes" name="informacoes" onChange={valueInput} />
+                <input className='form-control' id="informacoes" name="informacoes" placeholder="Escreva aqui as informações adicionais, para o seu tatuador(a)." onChange={valueInput} />
             </div>
 
             <div className='my-4 text-end'>
                 <button className='btn btn-lg btn-primary' type='submit'>Agendar </button>
             </div>
-
+            
         </form>
     )
 }
