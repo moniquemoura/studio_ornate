@@ -6,6 +6,7 @@ import Home from './componentPage/home'
 import Navbar from './component/navbar/navbar'
 import Footer from "./component/footer/footer";
 import Agendamento from "./componentPage/agendamento/agendamento";
+import { Login } from "./componentPage/Login/login";
 
 
 export default function App() {
@@ -14,7 +15,8 @@ export default function App() {
             <Route path="/" element={<Layout/>}>
                 <Route index element={<Home/>}/>
                 <Route path="/agendamento" element={<Agendamento/>}/>
-                
+                <Route path="/login" element={<Login/>}/>
+
                 <Route path="*" element={<NotFound/>}/>
             </Route>
         </Routes>
