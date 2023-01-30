@@ -14,17 +14,7 @@ export default function Navbar() {
 
                 <div className="menu">
                     <ul>
-                        <li>
-                            <Link to='/historia'>
-                                <span className="btnn">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    HIstória
-                                </span>
-                            </Link>
-                        </li>
+                        
                         <li>
                             <Link to='/artes'>
                                 <span className="btnn">

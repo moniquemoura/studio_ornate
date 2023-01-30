@@ -9,11 +9,7 @@ export default function Footer() {
                 <a className="fsto2" href=""><strong>Ornate</strong></a></div>
             <div>
                 <ul className="text1">
-                    <li>
-                        <Link to='/historia'>
-                            <span>HIstória</span>
-                        </Link>
-                    </li>
+                    
                     <li>
                         <Link to='/artes'>
                             <span>Artes</span>

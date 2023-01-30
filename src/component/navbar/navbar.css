@@ -61,7 +61,7 @@ nav {
 header .menu ul {
     display: flex;
     position: absolute;
-    left: 35vh;
+    left: 65vh;
     top: 20px;
 }
 
