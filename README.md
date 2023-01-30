@@ -1,5 +1,5 @@
 # Studio Ornate
-Este projeto foi desenvolvido para o Programa do Rio de Janeiro, Programadores Cariocas
+
 
 ## Uso
 
