@@ -8,7 +8,7 @@ import Navbar from './component/navbar/navbar'
 import Footer from "./component/footer/footer";
 import Agendamento from "./componentPage/agendamento/agendamento";
 import {Login} from "./componentPage/Login/login";
-
+import Home from "../src/component/home/home";
 import {AuthProvider, Context} from "./context/UserContext";
 import Dashboard from "./componentPage/Dash/Dashboard";
 
@@ -31,11 +31,11 @@ export default function App() {
         <AuthProvider>
             <Routes>
                 <Route path="/" element={<Layout/>}>
-                    <Route path="/" element={<NotFound/>}/>
+                    <Route path="/home" element={<Home/>}/>
                     <Route path="/agendamento" element={<Agendamento/>}/>
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/artes" element={<Catalogo/>}/>
-
+                    <Route path="/" element={<NotFound/>}/>
                     <Route path='/dashboard' element={
                         <ProtectedRoute>
                             <Dashboard/>

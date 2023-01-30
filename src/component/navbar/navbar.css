@@ -6,6 +6,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    width: 0;
     background: transparent;
     display: flex;
     align-items: center;
@@ -60,7 +61,7 @@ nav {
 header .menu ul {
     display: flex;
     position: absolute;
-    left: 50vh;
+    left: 35vh;
     top: 20px;
 }
 

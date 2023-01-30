@@ -1,37 +1,102 @@
-/*-==Titulo==-*/
-.titulo{
+main{
+    width: 100%;
+}
+.ti{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.title{
+.t1{
     position: relative;
-    margin-left: 450px;
+    margin-left: 430px;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 50px;
     transition: 0.2s;
 }
-.titulo2{
+.t1:hover{
+    color: yellow;
+    transition: .5s;
+}
+.t2{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40vh;
+    margin-left: 60px;
 }
-.title2{
+.t2{
     position: relative;
-    right:26px;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 50px;
     transition: 0.2s;
+    bottom: 40px;
 }
-.oo{
+.t2:hover{
+    color: yellow;
+    transition: .5s;
+}
+.too{
     font-size: 8vh;
     color: yellow;
 }
-/*-==FTitulo==-*/
+.too:hover{
+    color: white;
+    transition: .5s;
+}
+
+.h12{
+    text-align: center;
+    margin-right: 50px;
+    color: white;
+}
+.h123{
+    text-align: center;
+    margin-right: 50px;
+    color: white;
+}
+
+.tatuex {
+    width: 500px;
+    height: 109px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 30px 0;
+    margin-left: 350px;
+}
+
+ul li a {
+    color: white;
+    padding: 5px 10px;
+}
+
+ul li{
+  text-align: center;
+  left: 50px;
+}
+li{
+  list-style-type: none;
+}
+
+ul li:hover {
+    color: yellow;
+    transition: .5s;
+}
+
+ul li a:hover,
+a:link,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+.grupo p a {
+    text-decoration: none;
+    color: white;
+}
