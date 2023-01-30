@@ -6,7 +6,6 @@ const Home = () => {
 
     const [model, setModel] = useState(false)
     const [tempdata, setTempData] = useState([])
-    //importe a biblioteca do bootstrap no app.js/ import  '../node_modules/bootstrap/dist/css/bootstrap.min.css'; e instale antes 
     const getData = (img, tittle, desc) => {
         let tempData = [img, tittle, desc];
         setTempData(item => [1, ...tempData])
