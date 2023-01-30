@@ -30,8 +30,8 @@ export default function App() {
     return (
         <AuthProvider>
             <Routes>
-                <Route path="/" element={<Layout/>}>
-                    <Route path="/home" element={<Home/>}/>
+                <Route path="" element={<Layout/>}>
+                    <Route path="/" element={<Home/>}/>
                     <Route path="/agendamento" element={<Agendamento/>}/>
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/artes" element={<Catalogo/>}/>
