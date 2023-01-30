@@ -1,49 +1,70 @@
 import './navbar.css'
-export default function Navbar(){
-return (
+import {Link} from "react-router-dom";
 
-    <>
-<header> 
+export default function Navbar() {
+    return (
+        <header>
+            <nav>
+                <div className='title'>
+                    <Link to='/'>
+                        <span className="sto">Studi <strong className="stoo">o</strong> </span>
+                        <span className="sto2"><strong>Ornate</strong></span>
+                    </Link>
+                </div>
 
-      <div><a className="sto" href="">Studi <strong className="stoo" >o</strong> </a>
-      <a className="sto2" href=""><strong>Ornate</strong></a></div>
+                <div className="menu">
+                    <ul>
+                        <li>
+                            <Link to='/historia'>
+                                <span className="btnn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    HIstória
+                                </span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/artes'>
+                                <span className="btnn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Artes</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/about'>
+                                <span className="btnn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    O Studio</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/contato'>
+                                <span className="btnn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Contato</span>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
 
-        <div className="menu">
-            <ul>
-              <li>
-                <a className="btnn" href="">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                HIstória</a></li>
-              <li><a className="btnn" href="">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Artes</a></li>
-              <li><a className="btnn" href="">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                O Studio</a></li>
-              <li><a className="btnn" href="">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Contato</a></li>
-            </ul> 
-          </div>
-          
-        <div className="agen" ><a className="agend" href="">Agendar Agora!!</a></div>
-    
-    </header>
-    
+                <div className="agen">
+                    <Link to='/agendamento'>
+                        <span className="agend">Agendar Agora!!</span>
+                    </Link>
+                </div>
+            </nav>
+        </header>
 
-    
-    </>
-)
+    )
 }

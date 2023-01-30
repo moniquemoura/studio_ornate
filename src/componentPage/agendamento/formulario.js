@@ -9,9 +9,12 @@ export default function Formulario() {
     const handleSubmit = async e => {
         e.preventDefault();
         setEnviado(true)
-        // await axios.post(`http://minhaapi.com/agendamento`, agendamento)
-        //     .then(() => setEnviado(true))
-        //     .catch(() => setEnviado(false))
+        await axios.post(`http://localhost:3200/agendamentos`, agendamento)
+            .then(() => setEnviado(true))
+            .catch((err) => {
+                console.error(err);
+                setEnviado(false);
+            })
     }
 
     if (enviado) {
@@ -44,22 +47,22 @@ export default function Formulario() {
 
             <div className='row'>
                 <div className='my-4 col'>
-                    <label className="form-label" for="tatuador">Qual o tatuador(a):</label>
+                    <label className="form-label" >Qual o tatuador(a):</label>
                     <div className="form-text mb-2">Escolha o seu tatuador(a) preferido(a).</div>
                     <select className="form-select" aria-label="Disabled select example" name="tatuador" onChange={valueInput}>
                         <option >selecione</option>
-                        <option value="1">Juan Rodriguez</option>
-                        <option value="2">Samantha Smith</option>
-                        <option value="3">Michael Johnson</option>
-                        <option value="4">Emma Lee</option>
-                        <option value="5">David Brown</option>
+                        <option value="Juan Rodriguez">Juan Rodriguez</option>
+                        <option value="Samantha Smith">Samantha Smith</option>
+                        <option value="Michael Johnson">Michael Johnson</option>
+                        <option value="Emma Lee">Emma Lee</option>
+                        <option value="David Brown">David Brown</option>
                     </select>
                 </div>
 
                 <div className='my-4 col'>
                     <label className="form-label" >Horário:</label>
                     <div className="form-text mb-2">Escolha o melhor horário para você.</div>
-                    <select className="form-select" aria-label="Disabled select example" name="horarios" onChange={valueInput}>
+                    <select className="form-select" aria-label="Disabled select example" name="horario" onChange={valueInput}>
                         <option >selecione</option>
                         <option value="08:00">08:00</option>
                         <option value="10:00">10:00</option>
@@ -77,7 +80,10 @@ export default function Formulario() {
             </div>
 
             <div className='my-4 text-end'>
-                <button className='btn btn-lg btn-primary' type='submit'>Agendar </button>
+                <button className='btn btn-lg' style={{
+                    color: 'black',
+                    background: 'yellow'
+                }} type='submit'>Agendar </button>
             </div>
             
         </form>
