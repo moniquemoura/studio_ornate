@@ -22,7 +22,7 @@ export default function Footer() {
                         </Link>
                     </li>
                     <li>
-                        <Link to='/contato'>
+                        <Link to='/equipe'>
                             <span>profissionais</span>
                         </Link>
                     </li>
