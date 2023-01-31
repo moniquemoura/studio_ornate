@@ -2,6 +2,7 @@ import * as React from "react";
 import {useContext} from "react";
 import {Navigate, Outlet, Route, Routes} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/js/bootstrap.min.js"
 import "./App.css"
 import Catalogo from './componentPage/catalogo/Catalogo'
 import Navbar from './component/navbar/navbar'
@@ -11,6 +12,7 @@ import {Login} from "./componentPage/Login/login";
 import Home from "../src/component/home/home";
 import {AuthProvider, Context} from "./context/UserContext";
 import Dashboard from "./componentPage/Dash/Dashboard";
+import Studio from "./componentPage/studio/studio"
 
 /**
  * Caso não esteja autenticado redireciona para página Inicial
@@ -35,6 +37,7 @@ export default function App() {
                     <Route path="/agendamento" element={<Agendamento/>}/>
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/artes" element={<Catalogo/>}/>
+                    <Route path="/studio" element={<Studio/>} />
                     <Route path="/" element={<NotFound/>}/>
                     <Route path='/dashboard' element={
                         <ProtectedRoute>
