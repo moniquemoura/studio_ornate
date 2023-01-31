@@ -36,7 +36,7 @@ export default function Navbar() {
                             </Link>
                         </li>
                         <li>
-                            <Link to='/contato'>
+                            <Link to='/equipe'>
                                 <span className="btnn">
                                     <span></span>
                                     <span></span>
