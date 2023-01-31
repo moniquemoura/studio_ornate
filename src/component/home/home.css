@@ -8,7 +8,7 @@ main{
 }
 .t1{
     position: relative;
-    margin-left: 430px;
+    margin-left: 560px;
     color: white;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -34,7 +34,7 @@ main{
     text-decoration: none;
     font-size: 50px;
     transition: 0.2s;
-    bottom: 40px;
+    bottom: 47px;
 }
 .t2:hover{
     color: yellow;
@@ -61,14 +61,14 @@ main{
 }
 
 .tatuex {
-    width: 500px;
-    height: 109px;
+    width: 50%;
+    height: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 30px 0;
-    margin-left: 350px;
+    padding: 90px 0;
+    margin-left: 300px;
 }
 
 ul li a {
@@ -78,7 +78,7 @@ ul li a {
 
 ul li{
   text-align: center;
-  left: 50px;
+  left: 60px;
 }
 li{
   list-style-type: none;
