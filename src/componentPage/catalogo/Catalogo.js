@@ -23,7 +23,7 @@ const Home = () => {
                                 <div className="card p-0 overflow-hidden h100 shadow" >
                                     <img src={item.imgSrc} className="card-img-top" alt="lorem" />
                                     <div className="card-body">
-                                        <h5 className="card-title">{item.title}</h5>
+                                        <h5 className="card-title text-black">{item.title}</h5>
                                         <p className="card-text">{item.desc}</p>
                                         <button className="btn btn-primary" onClick={() => getData(item.imgSrc, item.title, item.desc)}>Click aqui</button>
                                     </div>
