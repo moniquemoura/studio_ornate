@@ -16,7 +16,7 @@ export default function Footer() {
                         </Link>
                     </li>
                     <li>
-                        <Link to='/about'>
+                        <Link to='/studio'>
                             <span>Sobre o studio</span>
                         </Link>
                     </li>
