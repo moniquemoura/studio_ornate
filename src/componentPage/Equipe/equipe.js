@@ -15,7 +15,7 @@ export default function Equipe() {
           <p class="lead">Juan Rodriguez é um tatuador de renome internacional, com mais de 20 anos de experiência no campo. Ele é especializado em tatuagens tradicionais, mas também tem habilidades em tatuagens negras e coloridas. Ele trabalha para o Studio Ornate, um dos estúdios mais conceituados na cidade de São Paulo, onde ele atende clientes de todo o mundo. O Studio Ornate é conhecido por sua equipe altamente qualificada e pelo ambiente acolhedor e profissional que oferece aos seus clientes.</p>
         </div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+          <img  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src={Img1} alt="img1"  />
 
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function Equipe() {
           <p class="lead">Samantha Smith é uma tatuadora de Nova York que se especializou em tatuagens minimalistas e geométricas. Ela é conhecida por sua precisão e atenção aos detalhes, e tem uma grande seguidora nas redes sociais. Ela trabalha para o Studio Ornate, um estúdio de renome localizado em Manhattan, onde atende clientes regulares e também viaja para convenções de tatuagem. O Studio Ornate é conhecido por sua equipe de tatuadores talentosos e sua paixão pelo trabalho artístico e pelo atendimento ao cliente.</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        <img  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src={Img2} alt="img1"  />
 
         </div>
       </div>
