@@ -12,7 +12,8 @@ import {Login} from "./componentPage/Login/login";
 import Home from "../src/component/home/home";
 import {AuthProvider, Context} from "./context/UserContext";
 import Dashboard from "./componentPage/Dash/Dashboard";
-import Studio from "./componentPage/studio/studio"
+import Studio from "./componentPage/studio/studio";
+import Equipe from "./componentPage/Equipe/equipe";
 
 /**
  * Caso não esteja autenticado redireciona para página Inicial
@@ -38,6 +39,7 @@ export default function App() {
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/artes" element={<Catalogo/>}/>
                     <Route path="/studio" element={<Studio/>} />
+                    <Route path="/equipe" element={<Equipe/>} />
                     <Route path="/" element={<NotFound/>}/>
                     <Route path='/dashboard' element={
                         <ProtectedRoute>
