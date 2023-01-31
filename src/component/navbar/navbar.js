@@ -42,7 +42,7 @@ export default function Navbar() {
                                     <span></span>
                                     <span></span>
                                     <span></span>
-                                    Contato</span>
+                                    profissionais</span>
                             </Link>
                         </li>
                     </ul>

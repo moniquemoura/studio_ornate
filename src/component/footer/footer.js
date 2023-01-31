@@ -22,7 +22,7 @@ export default function Footer() {
                     </li>
                     <li>
                         <Link to='/contato'>
-                            <span>Contato</span>
+                            <span>profissionais</span>
                         </Link>
                     </li>
                     <li>
