@@ -1,12 +1,12 @@
 import './navbar.css'
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import React from 'react';
 
 export default function Navbar() {
     return (
-        <header>
+        <header >
             <nav>
-                <div className='title'>
+                <div>
                     <Link to='/'>
                         <span className="sto">Studi <strong className="stoo">o</strong> </span>
                         <span className="sto2"><strong>Ornate</strong></span>
@@ -15,7 +15,7 @@ export default function Navbar() {
 
                 <div className="menu">
                     <ul>
-                        
+
                         <li>
                             <Link to='/artes'>
                                 <span className="btnn">
