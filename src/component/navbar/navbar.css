@@ -62,7 +62,7 @@ nav {
 header .menu ul {
     display: flex;
     position: absolute;
-    left: 90vh;
+    left: 50vh;
     top: 20px;
 }
 
