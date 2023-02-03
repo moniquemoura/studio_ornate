@@ -4,7 +4,7 @@ import {Navigate, Outlet, Route, Routes} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/js/bootstrap.min.js"
 import "./App.css"
-import Catalogo from './componentPage/catalogo/Catalogo'
+import Artes from './componentPage/artes/artes'
 import Navbar from './component/navbar/navbar'
 import Footer from "./component/footer/footer";
 import Agendamento from "./componentPage/agendamento/agendamento";
@@ -37,7 +37,7 @@ export default function App() {
                     <Route path="/" element={<Home/>}/>
                     <Route path="/agendamento" element={<Agendamento/>}/>
                     <Route path="/login" element={<Login/>}/>
-                    <Route path="/artes" element={<Catalogo/>}/>
+                    <Route path="/artes" element={<Artes/>}/>
                     <Route path="/studio" element={<Studio/>} />
                     <Route path="/equipe" element={<Equipe/>} />
                     <Route path="/" element={<NotFound/>}/>
